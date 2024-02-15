@@ -1,3 +1,5 @@
+import { NavBarLink } from "../NavBarLink";
+
 export function NavBar() {
   return (
     <nav className="w-full bg-gray-900 flex py-2 justify-around items-center text-gray-300">
@@ -8,19 +10,9 @@ export function NavBar() {
       </div>
       <ul className="flex justify-end gap-2 font-bold">
         <li>
-          <a href="" className="p-2 rounded bg-gray-800 hover:bg-opacity-60 ">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="" className="p-2 rounded bg-gray-800 hover:bg-opacity-60 ">
-            Sobre
-          </a>
-        </li>
-        <li>
-          <a href="" className="p-2 rounded bg-gray-800 hover:bg-opacity-60 ">
-            blog
-          </a>
+          <NavBarLink link="/" text="Blog" />
+          <NavBarLink link="/" text="Exercícios" />
+          <NavBarLink link="/" text="Receitas" />
         </li>
       </ul>
     </nav>
