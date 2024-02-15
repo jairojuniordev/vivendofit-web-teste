@@ -1,17 +1,7 @@
-import {
-  useAllPrismicDocumentsByType,
-  useSinglePrismicDocument,
-} from "@prismicio/react";
+import { useSinglePrismicDocument } from "@prismicio/react";
 import { NavBar } from "./components/NavBar";
 
 function App() {
-  // const [posts, { state }] = useAllPrismicDocumentsByType("blog_post", {
-  //   orderings: {
-  //     field: "document.first_publication_date",
-  //     direction: "desc",
-  //   },
-  // });
-
   const [document, { state }] = useSinglePrismicDocument("home");
 
   return (
