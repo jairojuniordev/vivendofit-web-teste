@@ -10,14 +10,11 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
-*.loca    Home
-    Sobre
-    blog
+*.env
 
 Página principal
 
 Bem-vindo(a) a página principall
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
